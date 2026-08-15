@@ -1,11 +1,11 @@
 ﻿using System.Text.RegularExpressions;
 
-Console.WriteLine("This app helps to group files to folder by filename template");
+Console.WriteLine("This script helps to group files to folder by filename template");
 Console.WriteLine("IMG_YYYYMMDD_******.jpg -> /YYYY/YYYY-MM/IMG_YYYYMMDD_******.jpg");
 
-String pattern = @"^(IMG|PANO|VID)[-_](\d{4})(\d{2})(\d{2})[-_](.{2}).*\.(jpg|mp4)$";
-String sourcePath = Path.Join(@"D:\photo\2019");
-String subfolder;
+string pattern = @"^(IMG|PANO|VID)[-_](\d{4})(\d{2})(\d{2})[-_](.{2}).*\.(jpg|mp4)$";
+string sourcePath = Path.Join(@"D:\photo\2019");
+string subfolder;
 
 int count = 0;
 int limit = 5000;
@@ -18,7 +18,7 @@ foreach(var file in Directory.GetFiles(sourcePath)){
         match.Groups[2].Value, 
         match.Groups[1].Value, 
         (match.Groups[5].Value=="WA")?"WhatsApp":"",  
-        String.Join("_", 
+        string.Join("_", 
             match.Groups[2].Value, 
             match.Groups[3].Value, 
             match.Groups[4].Value) )
