@@ -1,3 +1,94 @@
-/.vscode
-/bin
-/obj
+# My notes
+.drafts
+
+# .NET
+bin/
+obj/
+out/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+[Bb]uild/
+
+# Test results
+TestResults/
+Coverage/
+*.coverage
+*.cobertura.xml
+
+# BenchmarkDotNet
+BenchmarkDotNet.Artifacts/
+BenchmarkDotNet.*.log
+results/
+
+# Plots and generated files
+plots/
+*.png
+*.jpg
+*.jpeg
+*.svg
+!**/Assets/**/*.png     # если будут картинки в Assets — их можно оставить
+
+# Data and temporary files
+data/
+temp/
+*.csv
+*.jsonl
+*.dat
+
+# Visual Studio
+.vs/
+.vscode/*.log
+.vscode/extensions.json
+.vscode/settings.json   # можно оставить, если хочешь делить настройки
+.vscode/tasks.json      # можно оставить
+.vscode/launch.json     # можно оставить
+**/*.lscache
+
+# Rider / ReSharper
+.idea/
+*.sln.iml
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# Visual Studio Code
+.vscode/
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+
+# Temporary files
+*.tmp
+*.temp
+
+# Local tools
+.dotnet/
+.tool-versions
+
+# Performance and profiling
+*.etl
+*.perf
+*.dia
